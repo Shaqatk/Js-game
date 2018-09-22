@@ -1,0 +1,86 @@
+html { color: #000; background-color: #000;}
+
+.content {
+    position: relative;
+    z-index: 10;
+    width: 12m80px;
+    height: 800px;
+}
+
+#light {
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+#button{
+    width: 50px;
+    margin-left: 30px;
+    background: none;
+    border-color: #000;
+    
+}
+#button1{
+    width: 100px;
+    height: 20px;
+    margin-left: 200px;
+    margin-top: 40px;
+    background: none;
+    border-color: #000;
+    
+}
+
+#button2{
+    width: 200px;
+    height: 30px;
+    margin-left: 600px;
+    margin-top: 100px;
+    background: none;
+    border-color: #000;
+}
+#button3{
+    width: 50px;
+    height: 64px;
+    margin-left: 360px;
+    background: none;
+    border-color: #000;
+}
+#button4{
+    width: 150px;
+    height: 150px;
+    margin-left: 540px;
+    margin-top: 50px;
+    background: none;
+    border-color: #000;
+}
+#button5{
+    width: 100px;
+    height: 90px;
+    margin-left: 780px;
+    background: none;
+    border-color: #000;
+}
+#button6{
+    width: 100px;
+    height: 50px;
+    margin-left: 230px;
+    background: none;
+    border-color: #000;
+}
+
+#button7{
+    width: 40px;
+    height: 20px;
+    margin-left: 150px;
+    background: none;
+    border-color: #000;
+}
+#button8{
+    width: 700px;
+    height: 20px;
+    margin-left: 390px;
+    background: none;
+    border-color: #000;
+}

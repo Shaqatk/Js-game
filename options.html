@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Options</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style>
+         .back {
+    position: absolute;
+    top: 0px;
+  left: 0px;
+    z-index: -1;
+}
+
+.valigntext { 
+vertical-align: middle;
+border: 1px black solid; 
+}
+    body{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+
+<script>
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImage(image, newimage) {
+ 	var Image2Change = document.getElementById(image);
+ 	var newSrc = newimage;
+	Image2Change.src = newSrc;
+}
+
+var preloadFlag = false;
+
+function preloadImages() {
+	if (document.images) {
+		img1 = newImage("cross.jpg");
+		img2 = newImage("key.jpg");
+		img3 = newImage("cross1.jpg");
+		preloadFlag = true;
+	}
+}
+
+</script>
+
+</head>
+
+<body onload="preloadImages();">
+
+<h2>Options</h2>
+    <div class="back">
+         <img alt="" width="1280" height="800" src="flash.jpg"> 
+    </div>
+<br>
+
+
+<img id="thefocus" src="images/0.gif" width="100" height="100" alt="0" class="valigntext">
+<br><br>
+
+
+<p>
+The doors are locked<br>
+    Choose the right option to move forward<br><br>
+
+<a href="#"
+	onmouseover="changeImage('thefocus', 'cross1.jpg'); return true;">Option 1</a>
+	&nbsp; &nbsp; 
+<a href="keep.html"
+	onmouseover="changeImage('thefocus', 'key.jpg'); return true;">Option 2</a>
+	&nbsp; &nbsp; 
+<a href="#"
+	onmouseover="changeImage('thefocus', 'cross.jpg'); return true;">Option 3</a><br><br>
+
+</p>
+<br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Keep at it</title>
+	
+<style>
+         .back {
+    position: absolute;
+    top: 0px;
+  left: 0px;
+    z-index: -1;
+}
+body {
+	background-color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 30px;
+    text-align:center;
+}
+.code {color: navy; font-family: Courier;}
+
+.codeex {color: green;}
+
+.smalltext { font-size: small; }
+
+#pagecontent {
+	width: 800px;
+	
+}
+
+
+</style>
+
+
+<script>
+
+var howmanyclicks = 0;  
+
+
+function countclicks() { 
+
+	howmanyclicks++; 
+
+   if (howmanyclicks == 1) {  
+       alert("What's going on?");
+       
+   } else if (howmanyclicks == 2) { 
+       alert("Are you doing what you are supposed to do?");
+
+   } else if (howmanyclicks == 3) { 
+       alert("??");
+
+   } else if (howmanyclicks == 4) { 
+       alert("Keep trying");
+
+   } else if (howmanyclicks == 5) { 
+       alert("Persistence pays off");
+
+   } else {  //any other keys pressed:
+       window.location.replace("riddle.html")
+   } 
+
+}
+
+</script>
+
+</head>
+<body>
+<div class="back">
+         <img alt="" width="1280" height="800" src="riddle.png"> 
+    </div>
+<br>
+
+<h3>KNOCK KNOCK</h3>
+
+<h4>Keep at it and you shall be rewarded...</h4>
+
+<a href="#"
+	onmousedown="countclicks(); return true;"><img id="numberimg2" src="door.png" width="350" height="450" alt="2"></a>
+
+</body>
+</html>

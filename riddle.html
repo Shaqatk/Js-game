@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Riddle</title>
+    <style>
+         .back {
+    position: absolute;
+    top: 0px;
+  left: 0px;
+    z-index: -1;
+}
+        .tex{
+            font-size: 50px;
+            color: white;
+            
+        }
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="back">
+         <img alt="" width="1280" height="800" src="riddle.png"> 
+    </div>
+<form name="myform" onSubmit="return redirect()">
+    <span class="tex">What goes up but never comes down?</span><br/>
+    <br><br><br><br>
+    <input type="text" id="answergiven" /><br/>
+    <br>
+    <input name="tosubmit" type="submit" value="Submit" />
+    <input type="hidden" id="realanswer" value="age" />
+    <input type="hidden" id="nextpage" value="ghost.html" />
+    </form>
+<script>
+    function redirect() {
+  var answergiven = document.getElementById("answergiven");
+  var realanswer = document.getElementById("realanswer");
+  var nextpage = document.getElementById("nextpage");
+
+  if(answergiven.value.toLowerCase() == realanswer.value.toLowerCase()){
+      window.location = nextpage.value;
+  }
+  else{
+      alert('Wrong answer, please try again.');
+  }
+
+  return false; // prevent further bubbling of event
+}
+    </script>
+</body>
+</html>

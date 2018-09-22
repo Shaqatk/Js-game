@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<style>
+    .but{
+         width: 100%;
+  height:40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+        color: red;
+        background-color: black;
+        font-size: 30px;
+        
+
+    }
+    .back {
+    position: absolute;
+    top: 0px;
+  left: 0px;
+    z-index: -1;
+}
+.ani {
+    position: absolute;
+    top: 560px;
+    left: 0px;
+}
+.start {
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+.statement {
+    position: absolute;
+    top: 570px;
+    left: 450px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: darkblue;
+    font-family:fantasy;
+    text-align: center;
+    color: white;
+    font-size:33px;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid orange;
+    width: 40%;
+    height: 40%;
+    bottom: inherit;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+    <iframe width="0" height="0" src="audio.mp3" frameborder="0" allowfullscreen></iframe>
+</head>
+<body>
+<!-- Trigger/Open The Modal -->
+<div class="start" id="myBtn"> 
+        <img alt="" width="238" height="71" src="start.png">
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  You have fallen into the Yorke catacombs and must venture through the puzzle rooms and defeat the boss to win the game. Will you fail...or get out.... the choice is yours<br/>
+      <a href="options.html"><button class="but">Let's Go</button></a>
+  </div>
+    </div>
+        <div class="back">
+         <img alt="" width="1280" height="800" src="main1.jpg"> 
+    </div>
+    <div class="ani">
+        <a href="alt.html"><span>
+        <img alt="" width="255" height="255" src="ani.gif">
+             </span>
+           </a>
+    </div>
+  
+    <div class="statement">
+                <a href="statement.html"><span>
+<img alt="" width="415" height="71" src="state.png">
+                 </span>
+           </a>
+    </div>
+<script src="start.js"></script>
+</body>
+</html>
